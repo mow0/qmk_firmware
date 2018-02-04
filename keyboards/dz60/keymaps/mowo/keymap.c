@@ -7,13 +7,13 @@
 #define _HLb 2
 #define _HL  3
 #define _XL  4
+#define ______ KC_TRNS
 
 enum hype_keycodes {
   FN_HLa = SAFE_RANGE,
   FN_HLb
 };
 
-#define ______ KC_TRNS
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
