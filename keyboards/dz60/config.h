@@ -8,7 +8,7 @@
 #define PRODUCT_ID      0x2260
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    KBDFans
-#define PRODUCT         DZ60
+#define PRODUCT         DZ60	
 #define DESCRIPTION     DZ60 Keyboard
 
 /* key matrix size */
@@ -47,7 +47,7 @@
 #define RGB_DI_PIN E2
 #define RGBLIGHT_ANIMATIONS
 #define RGBLED_NUM 16
-#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_HUE_STEP 8	
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 
