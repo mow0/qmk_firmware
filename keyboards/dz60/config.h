@@ -51,4 +51,7 @@
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 
+#define BACKLIGHT_BREAHTING
+#define BREATHING_PERIOD 10
+
 #endif
