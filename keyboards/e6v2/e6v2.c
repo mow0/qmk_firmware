@@ -23,6 +23,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
 
 void led_set_kb(uint8_t usb_led) {
 	// put your keyboard LED indicator (ex: Caps Lock LED) toggling code here
+<<<<<<< HEAD
     if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
         // output low
         DDRB |= (1<<2);
@@ -32,5 +33,33 @@ void led_set_kb(uint8_t usb_led) {
         DDRB &= ~(1<<2);
         PORTB &= ~(1<<2);
     }
+=======
+	DDRB |= (1<<6);
+	if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
+			// output low
+			DDRB |= (1<<2);
+			PORTB &= ~(1<<2);
+		} else {
+			// Hi-Z
+			DDRB &= ~(1<<2);
+			PORTB &= ~(1<<2);
+		}
+	// DDRB |= (1<<7);
+	// DDRB |= (1<<1);
+	// DDRB |= (1<<3);
+	// DDRE |= (1<<6);
+	if (usb_led == 0){
+		PORTB |= (1<<6);
+		// PORTB |= (1<<7);
+		// PORTB |= (1<<1);
+		// PORTB |= (1<<3);
+		// PORTE |= (1<<6);
+	}
+	else{
+		PORTB &= ~(1<<6);
+		// PORTB &= ~(1<<7);
+	}
+    
+>>>>>>> 692a77c2dd8a369f6ae6efa22270d1bdeb551f0b
 	led_set_user(usb_led);
 }

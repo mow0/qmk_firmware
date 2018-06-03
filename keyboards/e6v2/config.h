@@ -48,9 +48,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define BACKLIGHT_PIN B6
 #ifdef BACKLIGHT_PIN
+<<<<<<< HEAD
 #define BACKLIGHT_LEVELS 10
 #define BACKLIGHT_BREAHTING
 #define BREATHING_PERIOD 10
+=======
+#define BACKLIGHT_LEVELS 5
+#define BACKLIGHT_BREAHTING
+#define BREATHING_PERIOD 3
+>>>>>>> 692a77c2dd8a369f6ae6efa22270d1bdeb551f0b
 #endif
 
 #define DIODE_DIRECTION COL2ROW
